@@ -1,0 +1,1045 @@
+---
+title: "Code Stitch Sample 1"
+description: "Meta description for the page"
+preloadImg: "/assets/images/landing.jpg"
+permalink: "/"
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+
+<!-- Script for Netlify Identity -->
+<script
+  defer
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-541">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h2 class="cs-title">Lorem Ipsum Dolor Sit Amet Cupidatat</h2>
+      <p class="cs-text">
+        Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco
+        cillum dolor. Voluptate exercitation incididunt aliquip deserunt.
+      </p>
+      <a href="" class="cs-button-solid">Consult Now</a>
+    </div>
+  </div>
+  <!--Background Color-->
+  <picture class="cs-background">
+    <source
+      media="(min-width: 1024px)"
+      srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/hero.jpg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/hero-t.jpg"
+    />
+    <source
+      media="(max-width: 600px)"
+      srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/hero-m.jpg"
+    />
+    <img
+      aria-hidden="true"
+      loading="lazy"
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/hero.jpg"
+      alt="meeting"
+      width="275"
+      height="132"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1377">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Services</span>
+      <h2 class="cs-title">
+        We’re Commited to Deliver Top High Quality Services
+      </h2>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-agency-briefcase.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <a href="/" class="cs-link">
+          <h3 class="cs-h3">Growing Businesses</h3>
+          <picture class="cs-arrow-wrapper">
+            <img
+              class="cs-arrow"
+              decoding="async"
+              src="assets/images/right-arrow.svg"
+              alt="arrow"
+              width="413"
+              height="374"
+              aria-hidden="true"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-agency-chart.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <a href="/" class="cs-link">
+          <h3 class="cs-h3">Building Relationships</h3>
+          <picture class="cs-arrow-wrapper">
+            <img
+              class="cs-arrow"
+              decoding="async"
+              src="assets/images/right-arrow.svg"
+              alt="arrow"
+              width="413"
+              height="374"
+              aria-hidden="true"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-agency-thumb.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <a href="/" class="cs-link">
+          <h3 class="cs-h3">Operational Excellence</h3>
+          <picture class="cs-arrow-wrapper">
+            <img
+              class="cs-arrow"
+              decoding="async"
+              src="assets/images/right-arrow.svg"
+              alt="arrow"
+              width="413"
+              height="374"
+              aria-hidden="true"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-agency-dial.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <a href="/" class="cs-link">
+          <h3 class="cs-h3">Lifetime Maintenance</h3>
+          <picture class="cs-arrow-wrapper">
+            <img
+              class="cs-arrow"
+              decoding="async"
+              src="assets/images/right-arrow.svg"
+              alt="arrow"
+              width="413"
+              height="374"
+              aria-hidden="true"
+            />
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-1219">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-image-group">
+      <!--Floating Box-->
+      <div class="cs-box">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-medal.svg"
+          alt="icon"
+          width="521"
+          height="60"
+          aria-hidden="true"
+        />
+        <span class="cs-number">12+</span>
+        <span class="cs-desc">Years of Experience</span>
+      </div>
+      <!--Big Background Image-->
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting.jpg"
+          alt="meeting"
+          width="522"
+          height="560"
+          aria-hidden="true"
+        />
+      </picture>
+      <!--Swirl-->
+      <img
+        class="cs-graphic"
+        loading="lazy"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/swirl.svg"
+        alt="icon"
+        width="715"
+        height="715"
+        aria-hidden="true"
+      />
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-content">
+      <span class="cs-topper">Our Mission & Vision</span>
+      <h2 class="cs-title">We Are The Champion Of The Finance Industry</h2>
+      <p class="cs-text">
+        Highly qualified tax consultants with many years of experience in the
+        field offer a full range of services to help you build a sound financial
+        future. Tax advice received in time allows you to avoid many problems
+        with the tax authorities. We will help you as efficiently as possible
+        and in a short time.
+      </p>
+      <div class="cs-content-flair">
+        <div class="cs-bar">
+          <h3 class="cs-h3">
+            Savings Strategies
+            <span class="cs-percentage">83%</span>
+          </h3>
+          <!--change the --progress number to match the percentage in cs-number-->
+          <div class="cs-progress" aria-hidden="true">
+            <span class="cs-progress-bar" style="--progress: 83%"></span>
+          </div>
+        </div>
+        <div class="cs-bar">
+          <h3 class="cs-h3">
+            Tax Planning
+            <span class="cs-percentage">72%</span>
+          </h3>
+          <!--change the --progress number to match the percentage in cs-number-->
+          <div class="cs-progress" aria-hidden="true">
+            <span class="cs-progress-bar" style="--progress: 72%"></span>
+          </div>
+        </div>
+        <div class="cs-bar">
+          <h3 class="cs-h3">
+            Trusted Company
+            <span class="cs-percentage">96%</span>
+          </h3>
+          <!--change the --progress number to match the percentage in cs-number-->
+          <div class="cs-progress" aria-hidden="true">
+            <span class="cs-progress-bar" style="--progress: 96%"></span>
+          </div>
+        </div>
+      </div>
+      <a
+        class="cs-button-solid"
+        aria-label="learn more about our programs"
+        href=""
+        >Learn More</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RTsbs-1219">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-image-group">
+      <!--Floating Box-->
+      <div class="cs-box">
+        <img
+          class="cs-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-medal.svg"
+          alt="icon"
+          width="521"
+          height="60"
+          aria-hidden="true"
+        />
+        <span class="cs-number">12+</span>
+        <span class="cs-desc">Years of Experience</span>
+      </div>
+      <!--Big Background Image-->
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting.jpg
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting.jpg"
+          alt="meeting"
+          width="522"
+          height="560"
+          aria-hidden="true"
+        />
+      </picture>
+      <!--Swirl-->
+      <img
+        class="cs-graphic"
+        loading="lazy"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/swirl.svg"
+        alt="icon"
+        width="715"
+        height="715"
+        aria-hidden="true"
+      />
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-content">
+      <span class="cs-topper">Our Mission & Vision</span>
+      <h2 class="cs-title">We Are The Champion Of The Finance Industry</h2>
+      <p class="cs-text">
+        Highly qualified tax consultants with many years of experience in the
+        field offer a full range of services to help you build a sound financial
+        future. Tax advice received in time allows you to avoid many problems
+        with the tax authorities. We will help you as efficiently as possible
+        and in a short time.
+      </p>
+      <div class="cs-content-flair">
+        <div class="cs-bar">
+          <h3 class="cs-h3">
+            Savings Strategies
+            <span class="cs-percentage">83%</span>
+          </h3>
+          <!--change the --progress number to match the percentage in cs-number-->
+          <div class="cs-progress" aria-hidden="true">
+            <span class="cs-progress-bar" style="--progress: 83%"></span>
+          </div>
+        </div>
+        <div class="cs-bar">
+          <h3 class="cs-h3">
+            Tax Planning
+            <span class="cs-percentage">72%</span>
+          </h3>
+          <!--change the --progress number to match the percentage in cs-number-->
+          <div class="cs-progress" aria-hidden="true">
+            <span class="cs-progress-bar" style="--progress: 72%"></span>
+          </div>
+        </div>
+        <div class="cs-bar">
+          <h3 class="cs-h3">
+            Trusted Company
+            <span class="cs-percentage">96%</span>
+          </h3>
+          <!--change the --progress number to match the percentage in cs-number-->
+          <div class="cs-progress" aria-hidden="true">
+            <span class="cs-progress-bar" style="--progress: 96%"></span>
+          </div>
+        </div>
+      </div>
+      <a
+        class="cs-button-solid"
+        aria-label="learn more about our programs"
+        href=""
+        >Learn More</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-46">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Services</span>
+      <h2 class="cs-title">Landscaping Services in Sometown, USA</h2>
+      <p class="cs-text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Amet minim mollit
+        non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        consequat duis enim velit mollit.
+      </p>
+    </div>
+    <div class="cs-image-group">
+      <!-- Image 1 -->
+      <div class="cs-item cs-item-1">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="assets/images/construction-m.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/images/construction.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="assets/images/construction.jpg"
+            alt="man grinding steel"
+            width="529"
+            height="256"
+          />
+        </picture>
+        <!-- Hover Box -->
+        <div class="cs-hover-box">
+          <h3 class="cs-heading3">Project Name</h3>
+          <span class="cs-subtitle">Subtitle</span>
+          <a class="cs-link" aria-label="read more about this project" href="">
+            Read More
+            <img src="assets/images/right-arrow.svg" />
+            <!-- SVG Arrow-->
+            <!-- <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                fill="white"
+              />
+            </svg> -->
+          </a>
+        </div>
+      </div>
+      <!-- Image 2 -->
+      <div class="cs-item cs-item-2">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="assets/images/cabinets2-m.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/images/cabinets2.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="assets/images/cabinets2.jpg"
+            alt="wood worker"
+            width="255"
+            height="255"
+          />
+        </picture>
+        <!-- Hover Box -->
+        <div class="cs-hover-box">
+          <h3 class="cs-heading3">Project Name</h3>
+          <span class="cs-subtitle">Subtitle</span>
+          <a class="cs-link" aria-label="read more about this project" href="">
+            Read More
+            <img src="assets/images/right-arrow.svg" />
+            <!-- SVG Arrow-->
+            <!-- <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                fill="white"
+              />
+            </svg> -->
+          </a>
+        </div>
+      </div>
+      <!-- Image 3 -->
+      <div class="cs-item cs-item-3">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="assets/images/landing-m.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/images/landing.jpg"
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="assets/images/landing.jpg"
+            alt="steel rebar grid"
+            width="255"
+            height="255"
+          />
+        </picture>
+        <!-- Hover Box -->
+        <div class="cs-hover-box">
+          <h3 class="cs-heading3">Project Name</h3>
+          <span class="cs-subtitle">Subtitle</span>
+          <a class="cs-link" aria-label="read more about this project" href="">
+            Read More
+            <img src="assets/images/right-arrow.svg" />
+            <!-- SVG Arrow-->
+            <!-- <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                fill="white"
+              />
+            </svg> -->
+          </a>
+        </div>
+      </div>
+      <!-- Image 4 -->
+      <div class="cs-item cs-item-4">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="assets/images/cabinets2-m.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/images/cabinets2.jpg"
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="assets/images/cabinets2.jpg"
+            alt="modern home"
+            width="255"
+            height="255"
+          />
+        </picture>
+        <!-- Hover Box -->
+        <div class="cs-hover-box">
+          <h3 class="cs-heading3">Project Name</h3>
+          <span class="cs-subtitle">Subtitle</span>
+          <a class="cs-link" aria-label="read more about this project" href="">
+            Read More
+            <img src="assets/images/right-arrow.svg" />
+          </a>
+        </div>
+      </div>
+      <!-- Image 5 -->
+      <div class="cs-item cs-item-5">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="assets/images/construction-m.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/images/construction.jpg"
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="assets/images/construction.jpg"
+            alt="appliance"
+            width="255"
+            height="255"
+          />
+        </picture>
+        <!-- Hover Box -->
+        <div class="cs-hover-box">
+          <h3 class="cs-heading3">Project Name</h3>
+          <span class="cs-subtitle">Subtitle</span>
+          <a class="cs-link" aria-label="read more about this project" href="">
+            Read More
+            <img src="assets/images/right-arrow.svg" />
+          </a>
+        </div>
+      </div>
+      <!-- Image 6 -->
+      <div class="cs-item cs-item-6">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="assets/images/landing-m.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/images/landing.jpg"
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="assets/images/landing.jpg"
+            alt="modern home"
+            width="255"
+            height="530"
+          />
+        </picture>
+        <!-- Hover Box -->
+        <div class="cs-hover-box">
+          <h3 class="cs-heading3">Project Name</h3>
+          <span class="cs-subtitle">Subtitle</span>
+          <a class="cs-link" aria-label="read more about this project" href="">
+            Read More
+            <img src="assets/images/right-arrow.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="" class="cs-button-solid">View Full Gallery</a>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Meat Team                   -->
+<!-- ============================================ -->
+
+<section id="meet-494">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Team</span>
+      <h2 class="cs-title">Our Team Members</h2>
+      <p class="cs-text">
+        At Stitch Cleaning Service, let us help you solve problems so that you
+        can focus on your mission. We support businesses through periods of
+        expansion, succession.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <span class="cs-name">Jimmy Krammer</span>
+          <span class="cs-details">
+            Details
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/arrow-right-gold.svg"
+              loading="lazy"
+              decoding="async"
+              width="14"
+              height="14"
+              alt="arrow icon"
+            />
+          </span>
+        </a>
+        <picture class="cs-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet1.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet1.jpg
+            "
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet1.jpg"
+            alt="person"
+            width="412"
+            height="462"
+          />
+        </picture>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <span class="cs-name">Jimmy Krammer</span>
+          <span class="cs-details">
+            Details
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/arrow-right-gold.svg"
+              loading="lazy"
+              decoding="async"
+              width="14"
+              height="14"
+              alt="arrow icon"
+            />
+          </span>
+        </a>
+        <picture class="cs-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet2.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet2.jpg
+            "
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet2.jpg"
+            alt="person"
+            width="412"
+            height="462"
+          />
+        </picture>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <span class="cs-name">Jimmy Krammer</span>
+          <span class="cs-details">
+            Details
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/arrow-right-gold.svg"
+              loading="lazy"
+              decoding="async"
+              width="14"
+              height="14"
+              alt="arrow icon"
+            />
+          </span>
+        </a>
+        <picture class="cs-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet3.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet3.jpg
+            "
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/meet3.jpg"
+            alt="person"
+            width="412"
+            height="462"
+          />
+        </picture>
+      </li>
+    </ul>
+    <a href="" class="cs-button-solid">View All Members</a>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<!-- No headers, so no section tag -->
+<div id="stats-315">
+  <ul class="cs-card-group">
+    <li class="cs-item">
+      <picture class="cs-picture">
+        <img
+          class="cs-icon"
+          src="assets/images/icon-girl.svg"
+          alt="icon"
+          width="35"
+          height="40"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+      </picture>
+      <div class="cs-flex-group">
+        <span class="cs-number">50+</span>
+        <span class="cs-stat">Attorneys</span>
+      </div>
+    </li>
+    <li class="cs-item">
+      <picture class="cs-picture">
+        <img
+          class="cs-icon"
+          src="assets/images/icon-people.svg"
+          alt="icon"
+          width="40"
+          height="35"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+      </picture>
+      <div class="cs-flex-group">
+        <span class="cs-number">850+</span>
+        <span class="cs-stat">Global Customers</span>
+      </div>
+    </li>
+    <li class="cs-item">
+      <picture class="cs-picture">
+        <img
+          class="cs-icon"
+          src="assets/images/icon-award.svg"
+          alt="icon"
+          width="40"
+          height="40"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+      </picture>
+      <div class="cs-flex-group">
+        <span class="cs-number">12</span>
+        <span class="cs-stat">Winning Awards</span>
+      </div>
+    </li>
+    <li class="cs-item">
+      <picture class="cs-picture">
+        <img
+          class="cs-icon"
+          src="assets/images/icon-check.svg"
+          alt="icon"
+          width="40"
+          height="40"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+      </picture>
+      <div class="cs-flex-group">
+        <span class="cs-number">98%</span>
+        <span class="cs-stat">Success Rate</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-289">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex">
+        <span class="cs-topper">Our Process</span>
+        <h2 class="cs-title">Why You Need the Top Lawyers in O’Connor</h2>
+      </div>
+      <p class="cs-text">
+        We’re a financial and consulting business company of professional
+        thinkers, strategists, digital innovators, designers and problem solvers
+        (everyone gets a mention). Our sense of curiosity brings brands to life,
+        gets them talking, and makes sure they’re heard above.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-award.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">99% winning guarantee</h3>
+        <p class="cs-item-text">
+          Full range of shipping disputes such as charter party disputes,
+          demurrage claims, purchase agreements, trade finance, carriage and
+          claims.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-award2.svg"
+          alt="icon"
+          width="40"
+          height="48"
+        />
+        <h3 class="cs-h3">Secure management</h3>
+        <p class="cs-item-text">
+          Full range of shipping disputes such as charter party disputes,
+          demurrage claims, purchase agreements, trade finance, carriage and
+          claims.
+        </p>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-icon"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="assets/images/icon-24-hours.svg"
+          alt="icon"
+          width="48"
+          height="48"
+        />
+        <h3 class="cs-h3">Full time support</h3>
+        <p class="cs-item-text">
+          Full range of shipping disputes such as charter party disputes,
+          demurrage claims, purchase agreements, trade finance, carriage and
+          claims.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1453">
+  <div class="cs-container">
+    <div class="cs-content">
+      <!--Yellow Quote-->
+      <img
+        class="cs-quote"
+        aria-hidden="true"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/quote-yellow.svg"
+        decoding="async"
+        alt="quote icon"
+        width="40"
+        height="33"
+        loading="lazy"
+      />
+      <span class="cs-topper">Testimonials</span>
+      <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+      <p class="cs-text">
+        At Stitch Cleaning Service, let us help you solve problems so that you
+        can focus on your mission. We support businesses through periods of
+        expansion, succession.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <p class="cs-review">
+          When you think about collecting customer feedback, it’s easy to get
+          overwhelmed by the sheer volume of it. With so many more customers and
+          so many ways to connect with their feedback, it’s hard to know to
+          where to start.
+        </p>
+        <div class="cs-flex-group">
+          <picture class="cs-picture">
+            <img
+              class="cs-profile"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/Image.png"
+              decoding="async"
+              alt="profile"
+              width="50"
+              height="50"
+              aria-hidden="true"
+              loading="lazy"
+            />
+          </picture>
+          <span class="cs-name">
+            George Thomas
+            <span class="cs-job">Founder of Yokoloko</span>
+          </span>
+        </div>
+      </li>
+      <li class="cs-item">
+        <p class="cs-review">
+          It’s easy to get overwhelmed by the sheer volume of feedback. With so
+          many more customers and so many ways to connect with their feedback,
+          it’s hard to know to where to start.
+        </p>
+        <div class="cs-flex-group">
+          <picture class="cs-picture">
+            <img
+              class="cs-profile"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/Image.png"
+              decoding="async"
+              alt="profile"
+              width="50"
+              height="50"
+              aria-hidden="true"
+              loading="lazy"
+            />
+          </picture>
+          <span class="cs-name">
+            Mason James
+            <span class="cs-job">Senior Gardener Farmer</span>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% include 'components/cta.html' %} {% endblock %}
